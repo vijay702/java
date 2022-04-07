@@ -7,41 +7,43 @@ public class BinarySearchArrayElement {
 		
 		int a[] = {1,2,3,4,5,6,7,8,9,10};
 		
-		int key=8;
-		Boolean flag =false;
+	
+		int target =70;
 		
-		int l=0;
+		boolean flag = false ;
+		
+		int l =0;
 		int h=a.length-1;
 		
-		
-		
-		while (l<=h) {
+		while(l<=h) {
 			
-			int m =(l+h)/2;
-			
-			if(a[m]==key) {
+			int m=(l+h)/2;
+		   	
+			if(m==target) {
 				
-				System.out.println("element found ");
-				flag = true;
+				System.out.println("element found" +target);
+				flag =true;
 				break;
 			}
 			
-			if(a[m]<key) {
+			if(target>m) {
+				
 				
 				l=m+1;
 			}
 			
-			if(a[m]>key) {
+			if(target<m) {
 				
 				h=m-1;
 			}
+			
 		}
 		
-		if(flag==false ) {
+		if(flag==false) {
 			
-			System.out.println("element not found");
+			System.out.println("kry not found");
 		}
-
+		
 	}
 
 }
