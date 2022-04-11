@@ -41,7 +41,7 @@ public class BinarySearchArrayElement {
 		
 		if(flag==false) {
 			
-			System.out.println("kry not found");
+			System.out.println("key not found");
 		}
 		
 	}
